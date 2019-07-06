@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "../include/sudoku_solve.h"
 
+struct sudoku_board {
+  int count_remaining[9] ;
+  int grid[9][9] ;
+} board;
+
 int main(int argc, char *argv[]) {
 	printf("*==[Sudoku Solver]==*\n");
   if (argc == 2) {
